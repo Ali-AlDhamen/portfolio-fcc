@@ -1,0 +1,206 @@
+:root {
+    --white: #FFFBEE;
+    --purple: #8872AD;
+    --lightblue: #32558C;
+    --darkblue:#163460;
+    --darkestblue: #021c33;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+header {
+    animation-name: headercolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width:100%;
+    height: 50px;
+    position: fixed;
+}
+header nav {
+    text-decoration: none;
+    text-align: end;
+    padding-top: 15px;
+}
+header a {
+    font-weight: 600;
+    text-decoration: none;
+    padding-right: 15px;
+    color: rgb(214, 214, 214);
+    
+}
+@keyframes headercolor {
+    0% {
+      background: var(--white);
+    }
+    100% {
+      background: var(--lightblue);
+    }
+  }
+#welcome-section {
+    padding: 125px 0 175px 0;
+    text-align: center;
+    animation-name: s1color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes s1color {
+    0% {
+      background: var(--lightblue);
+    }
+    
+    100% {
+        background-color: var(--purple);
+    }
+  }
+#welcome-section h1 {
+    font-size: 40px;
+    color:white;
+}
+#welcome-section p {
+    animation-name: textcolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+font-size: 20px;
+
+}
+@keyframes textcolor {
+    0% {
+      color: var(--white);
+    }
+    100% {
+      color: var(--lightblue);
+    }
+  }
+
+#projects {
+    text-align: center;
+    background-color: var(--darkestblue);
+}
+
+#projects h2 {
+    margin-top: 50px;
+    display: inline-block;
+    padding: 0 5px;
+    border-bottom: 1px solid  white;
+    color:white;
+}
+img {
+    height: 100px;
+}
+.project {
+    
+    
+    width: 183.3px;
+    margin: 15px 15px;
+    background-color: var(--darkblue);
+    
+}
+.project a {
+    text-decoration: none;
+    color:white;
+
+}
+.project span {
+    color: var(--darkblue);
+}
+.project:hover .sympol {
+    color: white;
+}
+
+.all {
+    margin-left: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+div button {
+    text-align: center;
+}
+button {
+    background-color: var(--darkblue);
+    color: white;
+    border: none;
+    margin-bottom: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+button:hover {
+    animation-name: headercolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.hoo {
+    height: 270px;
+    padding-top:80px ;
+    padding-bottom: 100px;
+    text-align: center;
+    animation-name: s1color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color:white;
+}
+.hoo h2 {
+    margin: 0 0 5px;
+}
+.hoo p {
+    font-size: 12px;
+
+}
+.hoo ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 15px 0;
+    
+
+}
+.social {
+    color:white;
+    padding-left: 15px;
+}
+
+hr {
+    margin-top: 80px;
+    height: 3px;
+    animation-name: headercolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border: none;
+}
+.copy {
+    margin-top: 7px;
+}
+@media only screen and (max-width: 650px) {
+    .all{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div button {
+        position: relative;
+        top: 25px;
+        left:25px;
+    }
+    
+}
+   
+li {
+    font-size: 1rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: all 3s;
+    transition: transform .7s ease-in-out;
+  }
+  
+li:hover {
+    transform: rotate(360deg);
+  }
